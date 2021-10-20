@@ -1,0 +1,62 @@
+/* body{
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+} */
+nav {
+  height: 120px;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 0 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: cornflowerblue;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+.title-logo {
+  font-family: 'Bungee', sans-serif;
+  font-size: 1.4em;
+}
+
+/* .new-tweet-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+} */
+
+.new-tweet-btn .fa-angle-double-down{
+  color: darkorange;
+  position: relative;
+}
+
+.animate {
+  flex:1;
+  opacity: 0.2;
+  animation: down 1.5s ease-out infinite;
+  top: -0.2em;
+}
+@keyframes down {
+  to {
+      opacity: 1;
+      top: 0.5em;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  nav{
+    background-color: navy;
+  }
+
+  .title-logo{
+    font-size: 1.8em;
+  }
+}

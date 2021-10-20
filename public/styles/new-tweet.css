@@ -1,0 +1,62 @@
+.new-tweet{
+  padding: 2em 1em;
+}
+
+.new-tweet label{
+  font-weight: 600;
+  color: navy;
+}
+
+#tweet-text{
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 0px;
+  border-bottom: 4px solid navy;
+  height: 4em;
+  font-size: 0.9em;
+  resize: none;
+}
+
+.new-tweet .action-group{
+  font-family: 'Bungee', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-tweet .counter{
+  color: navy;
+}
+
+.new-tweet .invalid{
+  color: red;
+}
+
+.new-tweet .submit{
+  background-color: navy;
+  color: white;
+  padding: 4px 8px;
+  border: 1px solid navy;
+  cursor: pointer;
+}
+
+/* Form Validation */
+#form-error{
+  padding: 0.5em;
+  border: 2px solid #ff000040;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  background-color: #ff000030;
+}
+
+.hide{
+  display: none;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .new-tweet{
+    padding: 1em;
+  }
+}
